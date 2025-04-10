@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">E-Commerce</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="product-page">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Premium Headphones" id="main-product-image"/>
+                </div>
+                <div class="thumbnail-container">
+                    <div class="thumbnail active" data-image="image 1">
+                        <img src="https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Thumbnail 1"/>
+                    </div>
+                    <div class="thumbnail" data-image="image 2">
+                        <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Thumbnail 2">
+                    </div>
+                    <div class="thumbnail" data-image="image 3">
+                        <img src="https://images.pexels.com/photos/185030/pexels-photo-185030.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Thumbnail 3">
+                    </div>
+                    <div class="thumbnail" data-image="image 4">
+                        <img src="https://images.pexels.com/photos/3945667/pexels-photo-3945667.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Thumbnail 4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h1>Premium Wireless Headphones</h1>
+                <div class="brand">by Apple</div>
+
+                <div class="price-container">
+                    <span class="current-price">$199.99</span>
+                    <span class="original-price">$249.99</span>
+                    <span class="discount">20% OFF</span>
+                </div>
+
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="review-count">(128 reviews)</span>
+                </div>
+               
+                <div class="description">
+                    <p>Experience crystal-clear sound with our premium wireless headphones. Featuring active noise cancellation, 30-hour battery life, and ultra-comfortable ear cushions for all-day listening.</p>
+                    <ul>
+                        <li>Active Noise Cancellation</li>
+                        <li>30-hour battery life</li>
+                        <li>Bluetooth 5.0</li>
+                        <li>Built-in microphone</li>
+                        <li>Foldable design</li>
+                    </ul>
+                </div>
+
+            <div class="color-options">
+                <h3>Color:</h3>
+                <div class="colors">
+                    <div class="color-option active" data-color="black">
+                        <span style="background-color: #000;"></span>
+                    </div>
+                    <div class="color-option" data-color="silver">
+                        <span style="background-color: #c0c0c0;"></span>
+                    </div>
+                    <div class="color-option" data-color="blue">
+                        <span style="background-color: #007bff;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quantity-selector">
+                <h3>Quantity:</h3>
+                <div class="quantity-control">
+                    <button class="quatity-btn minus">-</button>
+                    <input type="number" value="1" min="1" max="10" class="quantity-input"/>
+                    <button class="quantity-btn plus">+</button>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn add-to-cart">Add to Cart</button>
+                <button class="btn buy-now">Buy Now</button>
+            </div>
+
+            <div class="delivery-info">
+                <div class="delivery-option">
+                    <i class="fas fa-truck"></i>
+                    <span>Free delivery on orders over $50</span>
+                </div>
+                <div class="delivery-option">
+                    <i class="fas fa-undo"></i>
+                    <span>30-day free returns</span>
+                </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <div class="notification">Item added to cart!</div>
+    <script src="script.js"></script>
+</body>
+</html>
